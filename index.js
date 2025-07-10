@@ -13,7 +13,9 @@
 
   function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
+     localStorage.setItem("id_token", response.credential);
 
     // TODO: send the `response.credential` token to your backend
     // to verify & create/login the user
+      window.location.href = "https://www.chatbase.co/chatbot-iframe/DfG5GXK_KbtRRHrM5LgL5";  // or full URL
   }
